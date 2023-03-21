@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: git-secrets
+        name: git-secrets
+        entry: git
+        language: system
+        args: ['secrets', '--scan']
+  - repo: local
+    hooks:
+      - id: lint-staged
+        name: lint-staged
+        entry: yarn
+        language: system
+        args: ['lint-staged', '--no-stash', '--allow-empty']

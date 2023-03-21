@@ -1,0 +1,11 @@
+{
+  "name": "vitalInterpreterApp",
+  "displayName": "Vital Interpreter App",
+  "extra": {
+    "eas": {
+      "projectId": "2f57e829-258b-4041-ba01-b9632519234d"
+    }
+  },
+  "owner": "sorenson",
+  "slug": "vital-mobile"
+}
