@@ -17,7 +17,9 @@ jobs:
         
       - name: Build iOS
         run: |
+          cd vital-interpreter-app-sprint
           npm install -legacy-peer-deps
+          ls
           cd ios
           pod install
           npx react-native run-ios
@@ -31,6 +33,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Run Jest Tests
       run: | 
+        cd vital-interpreter-app-sprint
         npm install --force
   #      npm run test:unit
   
@@ -45,6 +48,7 @@ jobs:
         
       - name: Setup eas cli 
         run: |
+          cd vital-interpreter-app-sprint
           npm install -g eas-cli
           ls
           pwd
